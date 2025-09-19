@@ -42,13 +42,3 @@ b[0] = "grape"
 
 print(b)
 print(a)
-
-
-
-
-
-
-
-
-
-
