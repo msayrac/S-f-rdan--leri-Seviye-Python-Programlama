@@ -6,11 +6,20 @@
 #     print(sayilar[index])
 #     index += 1
 
-name = "Sadık Turan"
+# name = "Sadık Turan"
 
-for letter in name:
-    if letter == "a":
+# for letter in name:
+#     if letter == "a":
+#         continue
+#     print(letter)
+
+x = 0
+
+while x < 5:
+    x += 1
+    if x == 2:
         continue
-    print(letter)
+    print(x)
+    x += 1
 
 
