@@ -32,6 +32,19 @@ greeting =  "Hello There"
 # numbers = [x for x in range(0,10,2)]
 # print(numbers)
 
+import random 
+
+x = random.randint(1,101)
+print(x)
+guess = 0
+hak = 3
+point = 100
+while guess != x:
+    while hak < 1:
+        if hak == 0:
+            break
+        guess = int(input("guess : "))
+        hak-=1
 
 
 
