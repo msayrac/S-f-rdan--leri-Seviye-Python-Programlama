@@ -34,17 +34,26 @@ greeting =  "Hello There"
 
 import random 
 
-x = random.randint(1,101)
+num = random.randint(1,101)
 print(x)
 guess = 0
 hak = 3
 point = 100
-while guess != x:
-    while hak < 1:
-        if hak == 0:
-            break
-        guess = int(input("guess : "))
-        hak-=1
+while hak > 0:
+    hak -= 1
+    guess = int(input("guess : "))
+
+    if  guess == num:
+        print("you know")
+        break
+    elif num > guess:
+        print("yukarı")
+    else:
+        print("asagı")
+if hak == 0:
+        print(f"hakkınız bitti tutulan sayı {num}")
+
+        
 
 
 
