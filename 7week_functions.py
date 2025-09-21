@@ -1,105 +1,34 @@
-# # method liste icinde önceden tanımlanmıs bir öge.
+# bankamatik uygulaması
 
-# list = [ 1,2,3]
+sadikHesap = {
+    "ad": "Sadık Turan",
+    "hesapNo":"123456",
+    "bakiye":3000,
+    "ekHesap":2000
+}
 
-# list.append(4)
-# print(list) 
+aliHesap = {
+    "ad": "Ali kaya",
+    "hesapNo":"232652",
+    "bakiye":2000,
+    "ekHesap":1000
+}
 
-# print(type(list))
+def paraCek(hesap,miktar):
+    print(f"Merhaba {hesap["ad"]}")
 
-# mystring = "Hello"
-# print(type(mystring))
+    if hesap["bakiye"] >= miktar:
+        print("paranızı alabilirsiniz")
+    else:
+        toplam = hesap["bakiye"]+hesap["ekHesap"]
 
-# print(mystring.upper())
+        if toplam >=miktar:
+            ekHesapKullanimi = input("Ek hesap kulanılsın mı e/h : ")
 
-# # functions
-
-# def sayHello(user):
-#     print(f"Hello {user}")
-
-# sayHello("Ali")
-
-# def changeName(n):
-#     n = "ada"
-
-# name = "yigit"
-
-# changeName(name)
-
-# print(name)
-
-# def change(n):
-#     n[0] = "istanbul"
-
-# sehirler = ["ankara","izmir"]
-
-# change(sehirler)
-
-# print(sehirler)
-
-# def yazdir(kelime, adet):
-#     print(kelime*adet)
-
-# yazdir("merhaba\n",10)
-
-# def listeyecevir(*params):
-#     liste = []
-
-#     for param in params:
-#         liste.append(param)
-    
-#     return liste
-
-# result = listeyecevir(10,20,30,40,"merhaba")
-
-# print(result)
+            if ekHesapKullanimi =="y":
+                print("paranızı alınız")
+            else:
+                print(f"{hesap["hesapNo"]} nolu hesabınızda {hesap["bakiye"]} bulunmaktadır.")
 
 
-# lambda expression
-
-# def square(num): return num**2
-
-# numbers = [1,3,5,9]
-# result = list(map(lambda num: num**2, numbers))
-# print(result)
-
-# square = lambda num: num**2
-
-# print(square(3))
-
-# def check_even(num): return num%2 == 0
-
-# numbers = [1,2,3,4,5]
-# # result = list(filter(check_even,numbers))
-
-# result = list(filter(lambda num: num%2 ==0,numbers))
-
-# print(result)
-
-x = "global x"
-
-# def function():
-#     x = "local x"
-#     return x
-
-# print(function())
-
-# print(x)
-
-name="Ali"
-def changeName(new_name):
-    name = new_name
-    print(name)
-
-changeName("Ada")
-print(name)
-
-
-
-
-
-
-
-
-
-
+paraCek(sadikHesap,33500)
