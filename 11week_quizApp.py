@@ -68,8 +68,10 @@ class Quiz:
 q1 = Question("En iyi programlama dili hangisidir?",["c#","python","javascript","java"],"python")
 q2 = Question("En popüler programlama dili hangisidir?",["python","c#","javascript","java"],"python")
 q3 = Question("En çok kazandıran programlama dili hangisidir?",["java", "c#","python","javascript","java"],"python")
+q4 = Question("En sevilen programlama dili hangisidir?",["java", "c#","python","javascript","java"],"python")
+q5 = Question("En kolay programlama dili hangisidir?",["java", "c#","python","javascript","java"],"python")
 
-questions = [q1,q2,q3]
+questions = [q1,q2,q3,q4,q5]
 
 quiz = Quiz(questions)
 quiz.loadQuestion()
