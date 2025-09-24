@@ -5,7 +5,6 @@ from week_mod import *
 
 # print(help(week_mod.func)
 
-
 func(10)
 
 Person().speak()
