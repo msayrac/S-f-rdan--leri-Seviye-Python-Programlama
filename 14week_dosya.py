@@ -71,6 +71,52 @@
 
 # file.close()
 
+# file = open("newfile.txt","r",encoding="utf-8")
+
+# liste = file.readlines()
+
+# print(liste)
+
+# file = open("newfile.txt","r",encoding="utf-8")
+
+# content = file.read()
+# print(content)
+# file.close()
+
+# file.close() demeye gerek yok
+# with open("newfile.txt","r",encoding="utf-8") as file:
+#     content = file.read()
+#     print(content)
+#     file.seek(10) # cursoru basa gonderir
+
+#     print(file.tell()) # cursor konumunu verir
+
+#     content2 = file.read()
+#     print(content2)
+
+
+# with open("newfile.txt","r+",encoding="utf-8") as file:
+
+#     print(file.read())
+
+# with open("newfile.txt","r+",encoding = "utf-8") as file:
+#     file.seek(200)
+#     file.write("deneme")
+
+# with open("newfile.txt","r+",encoding="utf-8") as file:
+
+#     print(file.read())
+
+# with open("newfile.txt","a",encoding="utf-8") as file:
+#     file.write("\ncan")
+
+
+# with open("newfile.txt","r",encoding="utf-8") as file:
+#     print(file.read())
+
+
+
+
 
 
 
