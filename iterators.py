@@ -49,3 +49,4 @@ generator = cube()
 iterator = iter(generator)
 print(next(iterator))
 print(next(iterator))
+

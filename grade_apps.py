@@ -31,7 +31,8 @@ def not_hesapla(satir):
     else:
         harf = "FF"
     
-    return ogrenci_adi + " : " + harf + "\n"
+    return ogrenci_adi + " : " + harf + "\n" + " "
+
 
 
 def ortalamalari_oku():
